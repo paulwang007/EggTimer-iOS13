@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func hardnessSelected(_ sender: UIButton) {
+    let eggHardness = ["Hard": 12, "Medium": 7, "Soft": 5]
     
+    @IBAction func hardnessSelected(_ sender: UIButton) {
+        print(eggHardness[sender.currentTitle ?? "Hard"] ?? 12)
     }
     
 
